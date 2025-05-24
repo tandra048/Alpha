@@ -73,29 +73,33 @@
 </div>
      </div>
     </div>
+    <!-- display life -->
     <div class="flex flex-row justify-between w-3/4 ">
         <button class="btn bg-[#894189] rounded-full text-white">
   Life
   <img src="images/Group 23.svg" alt="">
-  <span>1</span>
+  <span id="current-life">5</span>
 </button>
+
+<!-- display score -->
 <button class="btn bg-[#894189] rounded-full text-white">
   Score
  <img src="images/monetization_on.svg" alt="">
- <span>1</span>
+ <span id="current-score">0</span>
 </button>
     </div>
     </div> 
     </section>
 
 <!-- score -->
-    <section class="score min-h-screen flex justify-center items-center hidden">
+    <section id="score" class=" min-h-screen flex justify-center items-center hidden">
        <div class="text-white text-center space-y-6 bg-[#FFFFFF33] p-10 rounded-lg">
+       <h4 class="text-3xl">Game Over !</h4>
         <h1 class="text-8xl">
             <span class="font-extrabold ">Score: </span>
-            <span>14</span>
+            <span id="last-score">14</span>
         </h1>
-      <button class="btn font-semibold text-2xl p-8">Play Again</button>
+      <button onclick="play()" class="btn font-semibold text-2xl p-8">Play Again</button>
       <p>Practice will make you Pro</p>
        </div>
     </section>
